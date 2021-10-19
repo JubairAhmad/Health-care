@@ -1,0 +1,12 @@
+.card{
+    height: 450px;
+}
+button{
+    border:none;
+    background: linear-gradient(90deg,  rgb(199, 143, 206) 35%, 
+    rgba(177, 64, 200, 1) 100%);
+    padding:5px 10px;
+    border-radius: 15px;
+    color: black;
+    font-weight: 600;
+}

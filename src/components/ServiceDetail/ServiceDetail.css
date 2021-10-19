@@ -1,0 +1,7 @@
+.detail{
+    display: flex;
+    margin-top: 30px;
+}
+.detail div{
+    margin-right: 10px;
+}
