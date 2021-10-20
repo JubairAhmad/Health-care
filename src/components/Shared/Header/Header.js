@@ -28,12 +28,12 @@ const Header = () => {
                     
 
                     {!user.displayName ?(<>
-                    <Nav.Link as={NavLink} style={{fontWeight:'900'}} to="/login">Login/Sign Up</Nav.Link>
+                    <Nav.Link as={NavLink} className='text-light' style={{fontWeight:'900'}} to="/login">Login/Sign Up</Nav.Link>
 
                     </>):(
                        <>
                        <span className="user-name"><img src={photoURL}  alt="" /></span>
-                       <button onClick={logOut} className="log-btn">Log Out</button></>
+                       <button onClick={logOut} className="log-btn text-light">Log Out</button></>
                     )}
 
 

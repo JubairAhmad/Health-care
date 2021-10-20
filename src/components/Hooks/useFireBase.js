@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { getAuth, signInWithPopup, GoogleAuthProvider,GithubAuthProvider,signOut,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendEmailVerification,sendPasswordResetEmail,updateProfile} from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider,signOut,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendEmailVerification,sendPasswordResetEmail,updateProfile} from "firebase/auth";
 import initializeAuthentication from '../../firebase/firebase.init';
 
 initializeAuthentication()
 
 /* all provider */
 const googleProvider= new GoogleAuthProvider();
-const githubProvider= new GithubAuthProvider();
 
 const auth = getAuth();
 
@@ -20,12 +19,6 @@ const[isLogin,setIsLogin]=useState(false)
 
 const signInWithGoogle=()=>{
    return signInWithPopup(auth, googleProvider)
-    
-}
-
-
-const signInWithGithub=()=>{
-    signInWithPopup(auth, githubProvider)
     
 }
 
@@ -139,7 +132,6 @@ useEffect(()=>{
         setUser,
         setError,
         signInWithGoogle,
-        signInWithGithub,
         logOut,
         resgister,
         handleEmail,

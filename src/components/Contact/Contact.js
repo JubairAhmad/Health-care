@@ -8,7 +8,7 @@ const Contact = () => {
         <div className='container'>
 
 
-<Row className='my-3'  xs={1} md={2} >
+<Row className='my-3'  xs={1} md={2}  >
                 <Col className="my-auto about-content" >
                 <h2>If you want to contact us, so please use one of method in below methods.</h2>
             <div>

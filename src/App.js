@@ -1,7 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
@@ -10,7 +9,6 @@ import NotFound from './components/NotFound/NotFound';
 import Services from './components/Services/Services';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
-import SignUp from './components/SignUp/SignUp';
 import Help from './components/Help/Help';
 import HelpResponse from './components/HelpResponse/HelpResponse';
 import ContactMailResponse from './components/ContactMailResponse/ContactMailResponse';
@@ -60,9 +58,6 @@ function App() {
           </Route>
           <Route path="/login">
             <LogIn></LogIn>
-          </Route>
-          <Route path='signup'>
-            <SignUp></SignUp>
           </Route>
           <Route path='*'>
             <NotFound></NotFound>

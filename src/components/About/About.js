@@ -1,9 +1,12 @@
 import React from 'react';
 import './About.css'
+import { Col, Row } from 'react-bootstrap';
 
 const About = () => {
     return (
         <div className='container about'>
+            <Row className='my-3'  xs={1} md={2} >
+                <Col className="my-auto about-content" >
             <div className='about-part'>
                 <img className='mb-5'  src="https://nurseslabs.com/wp-content/uploads/2018/04/male-nurse.jpg" alt="" />
             <p>Our Vision: A Healthier World</p>
@@ -29,6 +32,8 @@ const About = () => {
 
             University Health Network is a research hospital fully affiliated with the University of Toronto.</p>
         
+            </Col>
+            </Row>
         </div>
     );
 };

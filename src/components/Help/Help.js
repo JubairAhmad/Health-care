@@ -1,12 +1,16 @@
 import React from 'react';
-import { Form } from 'react-bootstrap';
+import { Col, Form, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Help.css'
 
 const Help = () => {
     return (
         <div className='container'>
-            <div>
+            
+            <Row className='my-3'  xs={1} md={2} >
+                <Col className="my-auto about-content" >
+
+                <div>
             <h1>What kind of help do you need?</h1>
             <div className='help-container '>
                 <div className='help-call'> <h2>please, contact us in below phone number</h2>
@@ -33,9 +37,13 @@ const Help = () => {
 
                     </Form>
                 </div>
-                <div></div>
             </div>
-            </div>
+          </div>
+          
+                </Col>
+            </Row>
+
+          
         </div>
     );
 };
